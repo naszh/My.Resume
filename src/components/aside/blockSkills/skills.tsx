@@ -1,4 +1,4 @@
-import { skillsList } from '../../constants/data';
+import { skillsList } from '../../../constants/data';
 
 export const MySkills = () => {
 	return (
@@ -6,8 +6,8 @@ export const MySkills = () => {
 			<span>Why hire me</span>
 			<h3>Skills</h3>
 			<div>
-				{skillsList.map(skill => {
-					return <span>{skill}</span>;
+				{skillsList.map((skill, i) => {
+					return <span key={i}>{skill}</span>;
 				})}
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-import { location } from '../../constants/data';
+import { location } from '../../../constants/data';
 
 export const MyInfo = () => {
 	return (

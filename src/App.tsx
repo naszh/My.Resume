@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { AsideInfo } from './components/asideInfo/asideInfo';
+import { Page } from './components/page/page';
 
 const App: FC = () => {
-	return <AsideInfo />;
+	return <Page />;
 };
 
 export default App;
