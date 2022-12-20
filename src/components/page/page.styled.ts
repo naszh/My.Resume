@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const PageContainer = styled.div`
 	display: grid;
-	grid-template-columns: 1.8fr 4fr;
+	grid-template-columns: 1fr 2fr;
 	gap: 20px;
-	margin: 0 120px;
+	margin: 0 150px;
 `;
 
 export const SectContainer = styled.div`

@@ -60,7 +60,7 @@ export const languagesList: LanguagesListType = [
 export const ExperienceList: Array<ExperienceListType> = [
 	{
 		organization: 'National Statistical Committee of the Republic of Belarus',
-		period: 'May, 2022 — now',
+		period: 'May, 2022 – now',
 		position: 'Editor of Internet resource',
 		duties: [
 			'ensuring the operability and maintenance of Internet sites',
@@ -72,9 +72,21 @@ export const ExperienceList: Array<ExperienceListType> = [
 
 export const EducationList: Array<EducationListType> = [
 	{
-		period: '2018 - 2022',
-		progress: 'kakoyto degree',
+		period: 'December, 2022 – now',
+		progress: 'In progress',
+		speciality: 'JavaScript / Front-end',
+		place: 'Rolling Scopes School',
+	},
+	{
+		period: 'June, 2022 – now',
+		progress: 'In progress',
+		speciality: 'Frontend Development',
+		place: 'TeachMeSkills',
+	},
+	{
+		period: '2018 – 2022',
+		progress: `Bachelor's degree`,
 		speciality: 'Economic Informatics',
-		place: 'BSEU',
+		place: 'Belarus State Economic University (BSEU)',
 	},
 ];

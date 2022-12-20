@@ -1,8 +1,8 @@
+import { EducationList } from '../../../constants/data';
 import {
 	BlockContainer,
 	BlockHeaderSpan,
 	BlockHeader,
-	BlockInfo,
 } from '../../common/common.styles';
 import { ContainerEduc } from './education.styled';
 
@@ -12,10 +12,16 @@ export const MyEducation = () => {
 			<BlockHeaderSpan>Where I gained my knowledge</BlockHeaderSpan>
 			<BlockHeader>Education and courses</BlockHeader>
 			<ContainerEduc>
-				<p>1</p>
-				<p>2</p>
-				<p>3</p>
-				<p>4</p>
+				{EducationList.map(el => (
+					<>
+						<p>{el.period}</p>
+						<p>{el.progress}</p>
+						<p>{el.speciality}</p>
+						<p>
+							<a href='#'>{el.place}</a>
+						</p>
+					</>
+				))}
 			</ContainerEduc>
 		</BlockContainer>
 	);

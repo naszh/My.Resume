@@ -21,7 +21,7 @@ export const AboutMe = () => {
 			<Line />
 			<ParagraphNav>
 				<button>
-					<a>CV</a>
+					<a>Resume</a>
 				</button>
 				<button>
 					<a>Portfolio</a>
