@@ -13,7 +13,6 @@ export const ProfileInfo = styled.div`
 
 export const HeaderTextOne = styled.h1`
 	font-size: 2.5rem;
-	margin: -35px 0 0 95px;
 	text-align: left;
 `;
 
@@ -25,7 +24,6 @@ export const HeaderTextTwo = styled.h2`
 export const Description = styled.p`
 	font-size: 1rem;
 	text-align: left;
-	margin: 3px 0 50px 95px;
 `;
 
 export const LinksList = styled.ul`

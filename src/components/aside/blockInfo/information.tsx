@@ -1,13 +1,18 @@
 import { location } from '../../../constants/data';
+import {
+	BlockContainer,
+	BlockHeader,
+	BlockInfo,
+} from '../../common/common.styles';
 
 export const MyInfo = () => {
 	return (
-		<div>
-			<h3>Information</h3>
-			<p>
+		<BlockContainer>
+			<BlockHeader>Information</BlockHeader>
+			<BlockInfo>
 				<span>Location</span>
 				<span>{location}</span>
-			</p>
-		</div>
+			</BlockInfo>
+		</BlockContainer>
 	);
 };

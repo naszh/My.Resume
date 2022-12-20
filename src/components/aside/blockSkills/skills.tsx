@@ -1,15 +1,22 @@
 import { skillsList } from '../../../constants/data';
+import {
+	BlockContainer,
+	BlockHeader,
+	BlockHeaderSpan,
+	BlockInfo,
+	Item,
+} from '../../common/common.styles';
 
 export const MySkills = () => {
 	return (
-		<div>
-			<span>Why hire me</span>
-			<h3>Skills</h3>
-			<div>
+		<BlockContainer>
+			<BlockHeaderSpan>Why hire me</BlockHeaderSpan>
+			<BlockHeader>Skills</BlockHeader>
+			<BlockInfo>
 				{skillsList.map((skill, i) => {
-					return <span key={i}>{skill}</span>;
+					return <Item key={i}>{skill}</Item>;
 				})}
-			</div>
-		</div>
+			</BlockInfo>
+		</BlockContainer>
 	);
 };

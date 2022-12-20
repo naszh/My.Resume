@@ -1,4 +1,5 @@
-import { FiGithub } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { TbBrandTelegram } from 'react-icons/tb';
 
 import {
 	ContactLinksType,
@@ -13,23 +14,22 @@ export const contactLinks: Array<ContactLinksType> = [
 	{
 		name: 'GitHub',
 		link: 'https://github.com/naszh',
-
-		icon: '<FiGithub />',
+		icon: <FiGithub />,
 	},
 	{
 		name: 'LinkedIn',
 		link: 'https://www.linkedin.com/in/naszh/',
-		icon: '<FiGithub />',
+		icon: <FiLinkedin />,
 	},
 	{
 		name: 'Gmail',
 		link: 'naszh99@gmail.com',
-		icon: '<FiGithub />',
+		icon: <FiMail />,
 	},
 	{
 		name: 'Telegram',
 		link: 'https://t.me/naszh9',
-		icon: ' <FiGithub />',
+		icon: <TbBrandTelegram />,
 	},
 ];
 

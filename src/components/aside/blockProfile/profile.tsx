@@ -1,4 +1,6 @@
+import { IconContext } from 'react-icons/lib';
 import { contactLinks, myName } from '../../../constants/data';
+import { BlockContainer } from '../../common/common.styles';
 import {
 	Avatar,
 	Description,
@@ -11,21 +13,33 @@ import {
 
 export const MyProfile = () => {
 	return (
-		<ProfileInfo>
-			<Avatar src='../profile-pic.png' alt={`avatar of ${myName}`} />
-			<HeaderTextOne>Hello, I'm</HeaderTextOne>
-			<HeaderTextTwo>{myName}</HeaderTextTwo>
-			<Description>&lt;frontend developer /&gt;</Description>
-			<LinksList>
-				{contactLinks.map(contact => {
-					return (
-						<LinksListItem key={contact.name}>
-							{ReactHtmlParser(contact.icon)}
-							<a href={`${contact.link}`}>{contact.name}</a>
-						</LinksListItem>
-					);
-				})}
-			</LinksList>
-		</ProfileInfo>
+		<BlockContainer>
+			<ProfileInfo>
+				<Avatar src='../profile-pic.png' alt={`avatar of ${myName}`} />
+				<HeaderTextOne>Hello, I'm</HeaderTextOne>
+				<HeaderTextTwo>{myName}</HeaderTextTwo>
+				<Description>&lt;frontend developer /&gt;</Description>
+				<LinksList>
+					{contactLinks.map(contact => {
+						return (
+							<LinksListItem key={contact.name}>
+								<a href={`${contact.link}`} target='_blank' rel='noreferrer'>
+									<IconContext.Provider
+										value={{
+											style: {
+												color: '#000',
+												fontSize: '1.8rem',
+											},
+										}}
+									>
+										{contact.icon}
+									</IconContext.Provider>
+								</a>
+							</LinksListItem>
+						);
+					})}
+				</LinksList>
+			</ProfileInfo>
+		</BlockContainer>
 	);
 };
