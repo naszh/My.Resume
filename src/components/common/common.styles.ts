@@ -9,11 +9,12 @@ export const BlockContainer = styled.div`
 
 export const BlockHeader = styled.h3`
 	text-align: center;
+	margin: 0 0 15px;
 `;
 
 export const BlockHeaderSpan = styled.span`
 	position: absolute;
-	top: 2;
+	top: 0;
 `;
 
 export const BlockInfo = styled.div`

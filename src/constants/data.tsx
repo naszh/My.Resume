@@ -3,6 +3,8 @@ import { TbBrandTelegram } from 'react-icons/tb';
 
 import {
 	ContactLinksType,
+	EducationListType,
+	ExperienceListType,
 	LanguagesListType,
 	SkillsListType,
 } from './data.types';
@@ -53,4 +55,26 @@ export const languagesList: LanguagesListType = [
 	'Russian',
 	'Belarusian',
 	'English',
+];
+
+export const ExperienceList: Array<ExperienceListType> = [
+	{
+		organization: 'National Statistical Committee of the Republic of Belarus',
+		period: 'May, 2022 — now',
+		position: 'Editor of Internet resource',
+		duties: [
+			'ensuring the operability and maintenance of Internet sites',
+			'technical editing (html layout)',
+			'administration of official accounts in social networks',
+		],
+	},
+];
+
+export const EducationList: Array<EducationListType> = [
+	{
+		period: '2018 - 2022',
+		progress: 'kakoyto degree',
+		speciality: 'Economic Informatics',
+		place: 'BSEU',
+	},
 ];

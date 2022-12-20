@@ -1,4 +1,5 @@
 import { AsideInfo } from '../aside/asideInfo';
+import { MainInfo } from '../main/mainInfo';
 import { PageContainer, SectContainer } from './page.styled';
 
 export const Page = () => {
@@ -7,7 +8,9 @@ export const Page = () => {
 			<SectContainer>
 				<AsideInfo />
 			</SectContainer>
-			<SectContainer></SectContainer>
+			<SectContainer>
+				<MainInfo />
+			</SectContainer>
 		</PageContainer>
 	);
 };
