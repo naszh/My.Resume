@@ -17,14 +17,15 @@ export const BlockHeaderSpan = styled.span`
 	top: 0;
 `;
 
-export const BlockInfo = styled.div`
+export const ItemsList = styled.ul`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 0;
+	padding: 0;
 `;
 
-export const Item = styled.span`
+export const ItemWithBorder = styled.span`
 	border: 1px solid black;
 	border-radius: 15px;
 	padding: 5px;

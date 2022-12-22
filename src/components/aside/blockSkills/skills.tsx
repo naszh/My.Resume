@@ -3,8 +3,8 @@ import {
 	BlockContainer,
 	BlockHeader,
 	BlockHeaderSpan,
-	BlockInfo,
-	Item,
+	ItemsList,
+	ItemWithBorder,
 } from '../../common/common.styles';
 
 export const MySkills = () => {
@@ -12,11 +12,11 @@ export const MySkills = () => {
 		<BlockContainer>
 			<BlockHeaderSpan>Why hire me</BlockHeaderSpan>
 			<BlockHeader>Skills</BlockHeader>
-			<BlockInfo>
+			<ItemsList>
 				{skillsList.map((skill, i) => {
-					return <Item key={i}>{skill}</Item>;
+					return <ItemWithBorder key={i}>{skill}</ItemWithBorder>;
 				})}
-			</BlockInfo>
+			</ItemsList>
 		</BlockContainer>
 	);
 };

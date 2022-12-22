@@ -20,9 +20,9 @@ export const MyProfile = () => {
 				<HeaderTextTwo>{myName}</HeaderTextTwo>
 				<Description>&lt;frontend developer /&gt;</Description>
 				<LinksList>
-					{contactLinks.map(contact => {
+					{contactLinks.map((contact, i) => {
 						return (
-							<LinksListItem key={contact.name}>
+							<LinksListItem key={i}>
 								<a href={`${contact.link}`} target='_blank' rel='noreferrer'>
 									<IconContext.Provider
 										value={{

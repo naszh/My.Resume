@@ -1,7 +1,9 @@
+import { ReactNode } from 'react';
+
 export interface ContactLinksType {
 	name: string;
 	link: string;
-	icon: any;
+	icon: ReactNode;
 }
 
 export type SkillsListType = Array<string>;
@@ -20,4 +22,13 @@ export interface EducationListType {
 	speciality: string;
 	place: string;
 	placeLink: string;
+}
+
+export interface ProjectsListType {
+	title: string;
+	imgSrc: string;
+	description: string;
+	stack: Array<string>;
+	githubLink: string;
+	deployLink?: string;
 }

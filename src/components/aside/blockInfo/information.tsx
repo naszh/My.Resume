@@ -1,18 +1,14 @@
 import { location } from '../../../constants/data';
-import {
-	BlockContainer,
-	BlockHeader,
-	BlockInfo,
-} from '../../common/common.styles';
+import { BlockContainer, BlockHeader } from '../../common/common.styles';
 
 export const MyInfo = () => {
 	return (
 		<BlockContainer>
 			<BlockHeader>Information</BlockHeader>
-			<BlockInfo>
-				<span>Location</span>
-				<span>{location}</span>
-			</BlockInfo>
+			<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+				<p>Location</p>
+				<p>{location}</p>
+			</div>
 		</BlockContainer>
 	);
 };

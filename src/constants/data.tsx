@@ -6,6 +6,7 @@ import {
 	EducationListType,
 	ExperienceListType,
 	LanguagesListType,
+	ProjectsListType,
 	SkillsListType,
 } from './data.types';
 
@@ -94,13 +95,13 @@ export const EducationList: Array<EducationListType> = [
 	},
 ];
 
-export const ProjectsList: any = [
+export const ProjectsList: Array<ProjectsListType> = [
 	{
 		title: 'Resume',
 		imgSrc: '../../../projectResume.png',
 		description: 'My resume for job hunting',
 		stack: [],
-		githubLink: '',
+		githubLink: 'https://github.com/naszh',
 		deployLink: '',
 	},
 	{

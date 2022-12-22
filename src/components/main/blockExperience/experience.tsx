@@ -32,8 +32,3 @@ export const MyExperience = () => {
 		</BlockContainer>
 	);
 };
-
-//</div>
-// ))}
-// {ExperienceList.map((el, i) => (
-// <div key={i}>
