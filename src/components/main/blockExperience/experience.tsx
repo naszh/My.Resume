@@ -3,7 +3,6 @@ import {
 	BlockContainer,
 	BlockHeaderSpan,
 	BlockHeader,
-	BlockInfo,
 } from '../../common/common.styles';
 import { Line } from '../blockAbout/about.styled';
 import { ContainerExp, ListExp } from './experience.styled';
@@ -13,27 +12,28 @@ export const MyExperience = () => {
 		<BlockContainer>
 			<BlockHeaderSpan>Where I worked</BlockHeaderSpan>
 			<BlockHeader>Experience</BlockHeader>
-			<ContainerExp>
-				<div>
-					{ExperienceList.map(el => (
-						<>
-							<p>{el.period}</p>
-							<Line style={{ width: '25%' }} />
-							<p>{el.organization}</p>
-						</>
-					))}
-				</div>
-				<div>
-					{ExperienceList.map(el => (
-						<>
-							<p>{el.position}</p>
-							{el.duties.map(duty => (
-								<ListExp>{duty}</ListExp>
+			{ExperienceList.map((el, i) => (
+				<ContainerExp key={i}>
+					<div>
+						<p>{el.period}</p>
+						<Line style={{ width: '25%' }} />
+						<p>{el.organization}</p>
+					</div>
+					<div>
+						<p>{el.position}</p>
+						<ul>
+							{el.duties.map((duty, i) => (
+								<ListExp key={i}>{duty}</ListExp>
 							))}
-						</>
-					))}
-				</div>
-			</ContainerExp>
+						</ul>
+					</div>
+				</ContainerExp>
+			))}
 		</BlockContainer>
 	);
 };
+
+//</div>
+// ))}
+// {ExperienceList.map((el, i) => (
+// <div key={i}>

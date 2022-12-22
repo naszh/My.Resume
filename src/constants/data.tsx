@@ -76,17 +76,56 @@ export const EducationList: Array<EducationListType> = [
 		progress: 'In progress',
 		speciality: 'JavaScript / Front-end',
 		place: 'Rolling Scopes School',
+		placeLink: '',
 	},
 	{
 		period: 'June, 2022 – now',
 		progress: 'In progress',
 		speciality: 'Frontend Development',
 		place: 'TeachMeSkills',
+		placeLink: '',
 	},
 	{
 		period: '2018 – 2022',
 		progress: `Bachelor's degree`,
 		speciality: 'Economic Informatics',
 		place: 'Belarus State Economic University (BSEU)',
+		placeLink: '',
+	},
+];
+
+export const ProjectsList: any = [
+	{
+		title: 'Resume',
+		imgSrc: '../../../projectResume.png',
+		description: 'My resume for job hunting',
+		stack: [],
+		githubLink: '',
+		deployLink: '',
+	},
+	{
+		title: 'NBRB',
+		imgSrc: '../../../projectNBRB.png',
+		description:
+			'Using the API of the National Bank of the Republic of Belarus. The rates of some currencies for today are displayed. The choice of any currency that has ever existed in the Republic of Belarus has been implemented for any time period with the output of a chart of dynamics and exchange rates.',
+		stack: ['HTML', 'CSS', 'JavaScript', 'NBRB API', 'HighCharts'],
+		githubLink: '',
+		deployLink: '',
+	},
+	{
+		title: 'Pokemons',
+		imgSrc: '../../../projectPokemonPage.png',
+		description:
+			'List of Pokemon (with pagination) and detailed information on each Pokemon based on the PokeAPI.',
+		stack: ['HTML', 'CSS', 'JavaScript', 'PokeApi'],
+		githubLink: '',
+		deployLink: '',
+	},
+	{
+		title: 'More works',
+		imgSrc: '',
+		description: '',
+		stack: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'],
+		githubLink: '',
 	},
 ];

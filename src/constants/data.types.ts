@@ -19,4 +19,5 @@ export interface EducationListType {
 	progress: string;
 	speciality: string;
 	place: string;
+	placeLink: string;
 }

@@ -1,3 +1,4 @@
+import { ProjectsList } from '../../constants/data';
 import {
 	BlockContainer,
 	BlockHeader,
@@ -11,11 +12,30 @@ export const MyPortfolio = () => {
 			<BlockHeaderSpan>What did I do</BlockHeaderSpan>
 			<BlockHeader>Recent Projects</BlockHeader>
 			<ContainerPortf>
-				<ProjectBox>
-					<div>1</div>
-					<div>1</div>
-					<div>1</div>
-				</ProjectBox>
+				{ProjectsList.map((project: any, i: any) => {
+					return (
+						<ProjectBox key={i}>
+							<h4>{project.title}</h4>
+							<img
+								src={project.imgSrc}
+								alt='Project preview'
+								style={{ width: '80%' }}
+							/>
+							<p>{project.description}</p>
+							<ul>
+								{project.stack.map((el: any, i: any) => (
+									<li key={i}>{el}</li>
+								))}
+							</ul>
+							<button>
+								<a href={project.githubLink}>github</a>
+							</button>
+							<button>
+								<a href={project.deployLink}>vercel</a>
+							</button>
+						</ProjectBox>
+					);
+				})}
 			</ContainerPortf>
 		</BlockContainer>
 	);

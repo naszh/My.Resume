@@ -11,18 +11,16 @@ export const MyEducation = () => {
 		<BlockContainer>
 			<BlockHeaderSpan>Where I gained my knowledge</BlockHeaderSpan>
 			<BlockHeader>Education and courses</BlockHeader>
-			<ContainerEduc>
-				{EducationList.map(el => (
-					<>
-						<p>{el.period}</p>
-						<p>{el.progress}</p>
-						<p>{el.speciality}</p>
-						<p>
-							<a href='#'>{el.place}</a>
-						</p>
-					</>
-				))}
-			</ContainerEduc>
+			{EducationList.map((el, i) => (
+				<ContainerEduc key={i}>
+					<p>{el.period}</p>
+					<p>{el.progress}</p>
+					<p>{el.speciality}</p>
+					<p>
+						<a href={el.placeLink}>{el.place}</a>
+					</p>
+				</ContainerEduc>
+			))}
 		</BlockContainer>
 	);
 };
