@@ -27,7 +27,7 @@ export const AboutMe = () => {
 						isActive ? { color: 'green' } : { color: 'inherit' }
 					}
 				>
-					<p>Resume</p>
+					Resume
 				</NavLink>
 				<NavLink
 					to='/portfolio'
@@ -35,7 +35,7 @@ export const AboutMe = () => {
 						isActive ? { color: 'green' } : { color: 'inherit' }
 					}
 				>
-					<p>Portfolio</p>
+					Portfolio
 				</NavLink>
 			</ParagraphNav>
 		</BlockContainer>

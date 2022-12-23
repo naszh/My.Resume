@@ -1,11 +1,11 @@
-import { ProjectsList } from '../../constants/data';
+import { ProjectsList } from '../../../constants/data';
 import {
 	BlockContainer,
 	BlockHeader,
 	BlockHeaderSpan,
 	ItemsList,
 	ItemWithBorder,
-} from '../common/common.styles';
+} from '../../common/common.styles';
 import {
 	ContainerPortf,
 	GithubButton,

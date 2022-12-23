@@ -1,9 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { AsideInfo } from '../components/aside/asideInfo';
-import { AboutMe } from '../components/main/blockAbout/about';
-import { MainInfo } from '../components/main/mainInfo';
-import { MyPortfolio } from '../components/portfolio/portfolio';
+import { MyInfo, MyLanguages, MyProfile, MySkills } from '../components/aside';
+import {
+	AboutMe,
+	MyEducation,
+	MyExperience,
+	MyPortfolio,
+} from '../components/main';
 import { PageContainer, SectContainer } from './page.styled';
 
 export const Page = () => {
@@ -11,12 +14,23 @@ export const Page = () => {
 		<Router>
 			<PageContainer>
 				<SectContainer>
-					<AsideInfo />
+					<MyProfile />
+					<MyInfo />
+					<MySkills />
+					<MyLanguages />
 				</SectContainer>
 				<SectContainer>
 					<AboutMe />
 					<Routes>
-						<Route path='/' element={<MainInfo />} />
+						<Route
+							path='/'
+							element={
+								<>
+									<MyExperience />
+									<MyEducation />
+								</>
+							}
+						/>
 						<Route path='/portfolio' element={<MyPortfolio />} />
 					</Routes>
 				</SectContainer>
