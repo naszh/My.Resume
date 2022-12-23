@@ -3,6 +3,7 @@ import { Normalize } from 'styled-normalize';
 import './index.css';
 import App from './App';
 import React from 'react';
+import { ThemeProvider } from './theme/themeProvider';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
@@ -10,6 +11,8 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.Fragment>
 		<Normalize />
-		<App />
+		<ThemeProvider>
+			<App />
+		</ThemeProvider>
 	</React.Fragment>
 );

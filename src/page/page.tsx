@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useContext } from 'react';
 
 import { MyInfo, MyLanguages, MyProfile, MySkills } from '../components/aside';
 import {
@@ -7,12 +8,18 @@ import {
 	MyExperience,
 	MyPortfolio,
 } from '../components/main';
+
 import { PageContainer, SectContainer } from './page.styled';
+import { ThemeContext } from '../theme/themeProvider';
+import { MaterialUISwitch } from '../switch/switchForTheme';
 
 export const Page = () => {
+	const { toggleTheme } = useContext(ThemeContext);
+
 	return (
 		<Router>
 			<PageContainer>
+				<MaterialUISwitch onClick={toggleTheme} />
 				<SectContainer>
 					<MyProfile />
 					<MyInfo />

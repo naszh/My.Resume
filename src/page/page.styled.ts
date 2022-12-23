@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
 `;
 
 export const SectContainer = styled.div`
-	padding: 30px 0;
+	padding: 40px 0;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
