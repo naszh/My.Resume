@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Avatar = styled.img`
-	width: 60%;
-	border: 3px solid #08e75f;
-	border-radius: 50%;
+	width: 70%;
 	position: relative;
 `;
 

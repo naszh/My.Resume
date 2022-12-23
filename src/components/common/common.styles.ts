@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const BlockContainer = styled.div`
-	border: 1px solid black;
-	border-radius: 10px;
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
 	padding: 15px;
 	position: relative;
 `;
@@ -26,7 +26,7 @@ export const ItemsList = styled.ul`
 `;
 
 export const ItemWithBorder = styled.span`
-	border: 1px solid black;
+	border: 2px solid rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	padding: 5px;
 	margin: 3px;

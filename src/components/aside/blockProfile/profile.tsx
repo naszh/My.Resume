@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import { IconContext } from 'react-icons/lib';
 import { contactLinks, myName } from '../../../constants/data';
+import { ThemeContext } from '../../../theme/themeProvider';
 import { BlockContainer } from '../../common/common.styles';
 import {
 	Avatar,
@@ -12,11 +14,18 @@ import {
 } from './profile.styled';
 
 export const MyProfile = () => {
+	const { theme } = useContext(ThemeContext);
 	return (
 		<BlockContainer>
 			<ProfileInfo>
 				<Avatar src='../profile-pic.png' alt={`avatar of ${myName}`} />
-				<HeaderTextOne>Hello, I'm</HeaderTextOne>
+				<HeaderTextOne
+					style={{
+						color: theme === 'light' ? '#03766B' : '#57BA98',
+					}}
+				>
+					Hello, I'm
+				</HeaderTextOne>
 				<HeaderTextTwo>{myName}</HeaderTextTwo>
 				<Description>&lt;frontend developer /&gt;</Description>
 				<LinksList>
@@ -27,7 +36,7 @@ export const MyProfile = () => {
 									<IconContext.Provider
 										value={{
 											style: {
-												color: '#000',
+												color: theme === 'light' ? '#03766B' : '#57BA98',
 												fontSize: '1.8rem',
 											},
 										}}

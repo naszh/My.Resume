@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Line = styled.div`
-	border-bottom: 1px solid #000;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 `;
 
 export const ParagraphText = styled.p`

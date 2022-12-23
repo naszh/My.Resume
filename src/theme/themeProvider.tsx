@@ -20,8 +20,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 		setTheme(theme === 'light' ? 'dark' : 'light');
 	};
 
-	const color = theme === 'light' ? '#EAE7DC' : '#2C3531';
-	const backgroundColor = theme === 'light' ? '#2C3531' : '#EAE7DC';
+	const color = theme === 'light' ? '#034640' : '#D1CCB9';
+	const backgroundColor = theme === 'light' ? '#EAE7DC' : '#2C3531';
 
 	document.body.style.color = color;
 	document.body.style.backgroundColor = backgroundColor;
