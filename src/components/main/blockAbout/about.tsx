@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { BlockContainer, BlockHeader } from '../../common/common.styles';
 import { Line, ParagraphNav, ParagraphText } from './about.styled';
 
@@ -20,12 +21,22 @@ export const AboutMe = () => {
 			</ParagraphText>
 			<Line />
 			<ParagraphNav>
-				<button>
-					<a>Resume</a>
-				</button>
-				<button>
-					<a>Portfolio</a>
-				</button>
+				<NavLink
+					to='/'
+					style={({ isActive }) =>
+						isActive ? { color: 'green' } : { color: 'inherit' }
+					}
+				>
+					<p>Resume</p>
+				</NavLink>
+				<NavLink
+					to='/portfolio'
+					style={({ isActive }) =>
+						isActive ? { color: 'green' } : { color: 'inherit' }
+					}
+				>
+					<p>Portfolio</p>
+				</NavLink>
 			</ParagraphNav>
 		</BlockContainer>
 	);
