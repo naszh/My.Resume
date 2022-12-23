@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import { ThemeContext } from '../../../theme/themeProvider';
+
 import { BlockContainer, BlockHeader } from '../../common/common.styles';
 import { Line, ParagraphNav, ParagraphText } from './about.styled';
 
@@ -29,8 +31,10 @@ export const AboutMe = () => {
 					to='/'
 					style={({ isActive }) =>
 						isActive
-							? { color: theme === 'light' ? '#03766B' : '#57BA98' }
-							: { color: 'inherit' }
+							? {
+									color: theme === 'light' ? '#03766B' : '#57BA98',
+							  }
+							: { color: 'inherit', textDecoration: 'none' }
 					}
 				>
 					Resume
@@ -39,8 +43,10 @@ export const AboutMe = () => {
 					to='/portfolio'
 					style={({ isActive }) =>
 						isActive
-							? { color: theme === 'light' ? '#03766B' : '#57BA98' }
-							: { color: 'inherit' }
+							? {
+									color: theme === 'light' ? '#03766B' : '#57BA98',
+							  }
+							: { color: 'inherit', textDecoration: 'none' }
 					}
 				>
 					Portfolio

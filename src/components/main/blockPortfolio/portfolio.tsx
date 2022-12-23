@@ -1,6 +1,8 @@
 import { useContext } from 'react';
+
 import { ProjectsList } from '../../../constants/data';
 import { ThemeContext } from '../../../theme/themeProvider';
+
 import {
 	BlockContainer,
 	BlockHeader,
@@ -20,7 +22,7 @@ export const MyPortfolio = () => {
 
 	return (
 		<BlockContainer>
-			<BlockHeaderSpan>What did I do</BlockHeaderSpan>
+			<BlockHeaderSpan theme={theme}>What did I do</BlockHeaderSpan>
 			<BlockHeader>Recent Projects</BlockHeader>
 			<ContainerPortf>
 				{ProjectsList.map((project, i) => {
@@ -35,13 +37,7 @@ export const MyPortfolio = () => {
 							<p>{project.description}</p>
 							<ItemsList>
 								{project.stack.map((el, i) => (
-									<ItemWithBorder
-										key={i}
-										style={{
-											color: theme === 'light' ? '#03766B' : '#57BA98',
-											borderColor: theme === 'light' ? '#03766B' : '#57BA98',
-										}}
-									>
+									<ItemWithBorder key={i} theme={theme}>
 										{el}
 									</ItemWithBorder>
 								))}

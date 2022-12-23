@@ -1,18 +1,20 @@
+import { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Normalize } from 'styled-normalize';
-import './index.css';
+
 import App from './App';
-import React from 'react';
 import { ThemeProvider } from './theme/themeProvider';
+
+import './index.css';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 root.render(
-	<React.Fragment>
+	<Fragment>
 		<Normalize />
 		<ThemeProvider>
 			<App />
 		</ThemeProvider>
-	</React.Fragment>
+	</Fragment>
 );

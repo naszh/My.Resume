@@ -3,11 +3,12 @@ import { ReactNode } from 'react';
 export interface ContactLinksType {
 	name: string;
 	link: string;
+	target?: string;
 	icon: ReactNode;
 }
 
 export type SkillsListType = Array<string>;
-export type LanguagesListType = Array<string>;
+export type LanguagesListType = Array<string | JSX.Element>;
 
 export interface ExperienceListType {
 	organization: string;

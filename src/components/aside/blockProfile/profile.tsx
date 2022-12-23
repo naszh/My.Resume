@@ -1,8 +1,10 @@
 import { useContext } from 'react';
 import { IconContext } from 'react-icons/lib';
+
 import { contactLinks, myName } from '../../../constants/data';
 import { ThemeContext } from '../../../theme/themeProvider';
-import { BlockContainer } from '../../common/common.styles';
+
+import { BlockContainer, DefaultLink } from '../../common/common.styles';
 import {
 	Avatar,
 	Description,
@@ -15,24 +17,23 @@ import {
 
 export const MyProfile = () => {
 	const { theme } = useContext(ThemeContext);
+
 	return (
 		<BlockContainer>
 			<ProfileInfo>
 				<Avatar src='../profile-pic.png' alt={`avatar of ${myName}`} />
-				<HeaderTextOne
-					style={{
-						color: theme === 'light' ? '#03766B' : '#57BA98',
-					}}
-				>
-					Hello, I'm
-				</HeaderTextOne>
+				<HeaderTextOne theme={theme}>Hello, I'm</HeaderTextOne>
 				<HeaderTextTwo>{myName}</HeaderTextTwo>
 				<Description>&lt;frontend developer /&gt;</Description>
 				<LinksList>
 					{contactLinks.map((contact, i) => {
 						return (
 							<LinksListItem key={i}>
-								<a href={`${contact.link}`} target='_blank' rel='noreferrer'>
+								<DefaultLink
+									href={contact.link}
+									target={contact.target}
+									rel='noreferrer'
+								>
 									<IconContext.Provider
 										value={{
 											style: {
@@ -43,7 +44,7 @@ export const MyProfile = () => {
 									>
 										{contact.icon}
 									</IconContext.Provider>
-								</a>
+								</DefaultLink>
 							</LinksListItem>
 						);
 					})}

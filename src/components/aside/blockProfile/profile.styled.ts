@@ -1,3 +1,4 @@
+import { Theme } from '@mui/material';
 import styled from 'styled-components';
 
 export const Avatar = styled.img`
@@ -10,12 +11,13 @@ export const ProfileInfo = styled.div`
 	padding-top: 20px;
 `;
 
-export const HeaderTextOne = styled.h1`
-	font-size: 2.5rem;
+export const HeaderTextOne = styled.h1<{ theme: Theme }>`
+	font-size: 2.2rem;
 	text-align: left;
 	position: absolute;
 	margin: 0;
 	top: 10px;
+	color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
 `;
 
 export const HeaderTextTwo = styled.h2`
@@ -39,4 +41,7 @@ export const LinksListItem = styled.li`
 	list-style: none;
 	display: inline-block;
 	padding: 0 15px;
+	&:hover {
+		transform: scale(1.3);
+	}
 `;

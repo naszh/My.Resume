@@ -1,6 +1,7 @@
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { TbBrandTelegram } from 'react-icons/tb';
 
+import { DefaultLink } from '../components/common/common.styles';
 import {
 	ContactLinksType,
 	EducationListType,
@@ -17,21 +18,24 @@ export const contactLinks: Array<ContactLinksType> = [
 	{
 		name: 'GitHub',
 		link: 'https://github.com/naszh',
+		target: '_blank',
 		icon: <FiGithub />,
 	},
 	{
 		name: 'LinkedIn',
 		link: 'https://www.linkedin.com/in/naszh/',
+		target: '_blank',
 		icon: <FiLinkedin />,
 	},
 	{
 		name: 'Gmail',
-		link: 'naszh99@gmail.com',
+		link: 'mailto: naszh99@gmail.com',
 		icon: <FiMail />,
 	},
 	{
 		name: 'Telegram',
 		link: 'https://t.me/naszh9',
+		target: '_blank',
 		icon: <TbBrandTelegram />,
 	},
 ];
@@ -55,7 +59,9 @@ export const skillsList: SkillsListType = [
 export const languagesList: LanguagesListType = [
 	'Russian',
 	'Belarusian',
-	'English',
+	<DefaultLink href='https://www.efset.org/cert/zh7ny2' target='_blank'>
+		English – click to view certificate EF SET
+	</DefaultLink>,
 ];
 
 export const ExperienceList: Array<ExperienceListType> = [
@@ -73,25 +79,26 @@ export const ExperienceList: Array<ExperienceListType> = [
 
 export const EducationList: Array<EducationListType> = [
 	{
-		period: 'December, 2022 – now',
+		period: 'Dec, 2022 – now',
 		progress: 'In progress',
-		speciality: 'JavaScript / Front-end',
+		speciality: 'JavaScript/ Frontend',
 		place: 'Rolling Scopes School',
-		placeLink: '',
+		placeLink: 'https://rs.school/js/',
 	},
 	{
-		period: 'June, 2022 – now',
+		period: 'Jun, 2022 – now',
 		progress: 'In progress',
 		speciality: 'Frontend Development',
 		place: 'TeachMeSkills',
-		placeLink: '',
+		placeLink:
+			'https://teachmeskills.by/kursy-programmirovaniya/frontend-html-css-javascript-minsk',
 	},
 	{
 		period: '2018 – 2022',
 		progress: `Bachelor's degree`,
 		speciality: 'Economic Informatics',
 		place: 'Belarus State Economic University (BSEU)',
-		placeLink: '',
+		placeLink: 'https://digitale.by/ecinf/',
 	},
 ];
 
