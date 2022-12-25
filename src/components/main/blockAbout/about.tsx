@@ -13,17 +13,11 @@ export const AboutMe = () => {
 		<BlockContainer>
 			<BlockHeader>About me</BlockHeader>
 			<ParagraphText>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
-				cumque similique nisi natus quidem autem eos maxime minima inventore
-				sequi, nobis quia! Architecto laudantium consequatur necessitatibus
-				incidunt maxime, unde quos! Lorem ipsum dolor sit amet consectetur
-				adipisicing elit. Ullam quaerat consectetur nisi aperiam excepturi
-				laborum delectus veniam, asperiores modi labore nesciunt ipsum
-				temporibus voluptas illo. Tempore veniam minima voluptates quia. Lorem
-				ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit saepe
-				cumque ex temporibus quam quia vero quas dolor expedita, reprehenderit,
-				dolores repellat. Necessitatibus similique, ullam quo doloribus facilis
-				doloremque?
+				I’m very motivated and ready to work hard. I study a lot and will
+				shortly finish my courses at the TMS school. At the moment I really want
+				to get more development experience and I'm ready to consider any
+				relevant suggestions. That's why I’m looking for a job or internship as
+				a Frontend developer.
 			</ParagraphText>
 			<Line />
 			<ParagraphNav>
