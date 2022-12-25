@@ -6,6 +6,9 @@ export const ContainerEduc = styled.div`
 	grid-template-columns: repeat(4, 1fr);
 	gap: 15px;
 	align-items: center;
+	@media (max-width: 768px) {
+		gap: 10px;
+	}
 `;
 
 export const Link = styled.a<{ theme: Theme }>`

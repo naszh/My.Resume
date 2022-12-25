@@ -6,6 +6,12 @@ export const BlockContainer = styled.div`
 	border-radius: 15px;
 	padding: 15px;
 	position: relative;
+	@media (max-width: 1024px) {
+		padding: 10px;
+	}
+	@media (max-width: 768px) {
+		padding: 5px;
+	}
 `;
 
 export const BlockHeader = styled.h3`

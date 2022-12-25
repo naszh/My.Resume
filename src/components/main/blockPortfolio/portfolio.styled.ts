@@ -7,6 +7,9 @@ export const ContainerPortf = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 15px;
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const ProjectBox = styled(BlockContainer)`
