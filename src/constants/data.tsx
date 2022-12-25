@@ -97,7 +97,7 @@ export const EducationList: Array<EducationListType> = [
 		period: '2018 – 2022',
 		progress: `Bachelor's degree`,
 		speciality: 'Economic Informatics',
-		place: 'Belarus State Economic University (BSEU)',
+		place: 'Belarus State Economic University',
 		placeLink: 'https://digitale.by/ecinf/',
 	},
 ];
@@ -108,8 +108,7 @@ export const ProjectsList: Array<ProjectsListType> = [
 		imgSrc: '../../../projectResume.png',
 		description: 'My resume for job hunting',
 		stack: [],
-		githubLink: 'https://github.com/naszh',
-		deployLink: '',
+		githubLink: 'https://github.com/naszh/My.Resume',
 	},
 	{
 		title: 'NBRB',
@@ -117,8 +116,8 @@ export const ProjectsList: Array<ProjectsListType> = [
 		description:
 			'Using the API of the National Bank of the Republic of Belarus. The rates of some currencies for today are displayed. The choice of any currency that has ever existed in the Republic of Belarus has been implemented for any time period with the output of a chart of dynamics and exchange rates.',
 		stack: ['HTML', 'CSS', 'JavaScript', 'NBRB API', 'HighCharts'],
-		githubLink: '',
-		deployLink: '',
+		githubLink: 'https://github.com/naszh/NBRB-API',
+		deployLink: 'http://nbrb-phi.vercel.app/',
 	},
 	{
 		title: 'Pokemons',
@@ -126,14 +125,14 @@ export const ProjectsList: Array<ProjectsListType> = [
 		description:
 			'List of Pokemon (with pagination) and detailed information on each Pokemon based on the PokeAPI.',
 		stack: ['HTML', 'CSS', 'JavaScript', 'PokeApi'],
-		githubLink: '',
-		deployLink: '',
+		githubLink: 'https://github.com/naszh/PokeAPI',
+		deployLink: 'http://pokemon-naszh.vercel.app/',
 	},
 	{
 		title: 'More works',
-		imgSrc: '',
-		description: '',
+		imgSrc: '../../../githubPage.png',
+		description: 'My github page with other pojects.',
 		stack: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'],
-		githubLink: '',
+		githubLink: 'https://github.com/naszh',
 	},
 ];

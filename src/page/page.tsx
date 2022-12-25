@@ -8,10 +8,10 @@ import {
 	MyExperience,
 	MyPortfolio,
 } from '../components/main';
-
-import { PageContainer, SectContainer } from './page.styled';
 import { ThemeContext } from '../theme/themeProvider';
 import { MaterialUISwitch } from '../switch/switchForTheme';
+
+import { PageContainer, SectContainer } from './page.styled';
 
 export const Page = () => {
 	const { toggleTheme } = useContext(ThemeContext);

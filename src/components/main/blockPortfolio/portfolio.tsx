@@ -8,13 +8,17 @@ import {
 	BlockHeader,
 	BlockHeaderSpan,
 	ItemsList,
-	ItemWithBorder,
+	DefaultLink,
+	Text,
 } from '../../common/common.styles';
 import {
 	ContainerPortf,
 	GithubButton,
+	Header,
 	ProjectBox,
 	VercelButton,
+	PreviewImg,
+	SmallerItemWithBorder,
 } from './portfolio.styled';
 
 export const MyPortfolio = () => {
@@ -28,36 +32,34 @@ export const MyPortfolio = () => {
 				{ProjectsList.map((project, i) => {
 					return (
 						<ProjectBox key={i}>
-							<h4>{project.title}</h4>
-							<img
-								src={project.imgSrc}
-								alt='Project preview'
-								style={{ width: '80%' }}
-							/>
-							<p>{project.description}</p>
-							<ItemsList>
-								{project.stack.map((el, i) => (
-									<ItemWithBorder key={i} theme={theme}>
-										{el}
-									</ItemWithBorder>
-								))}
-							</ItemsList>
-							<a href={project.githubLink}>
-								<GithubButton
-									style={{
-										color: theme === 'light' ? '#034640' : '#D1CCB9',
-									}}
-								/>
-							</a>
-							{project.deployLink && (
-								<a href={project.deployLink}>
-									<VercelButton
+							<Header>
+								{project.title}
+								<DefaultLink href={project.githubLink} target='_blank'>
+									<GithubButton
 										style={{
 											color: theme === 'light' ? '#034640' : '#D1CCB9',
 										}}
 									/>
-								</a>
-							)}
+								</DefaultLink>
+								{project.deployLink && (
+									<DefaultLink href={project.deployLink} target='_blank'>
+										<VercelButton
+											style={{
+												color: theme === 'light' ? '#034640' : '#D1CCB9',
+											}}
+										/>
+									</DefaultLink>
+								)}
+							</Header>
+							<PreviewImg src={project.imgSrc} alt='Project preview' />
+							<Text>{project.description}</Text>
+							<ItemsList>
+								{project.stack.map((el, i) => (
+									<SmallerItemWithBorder key={i} theme={theme}>
+										{el}
+									</SmallerItemWithBorder>
+								))}
+							</ItemsList>
 						</ProjectBox>
 					);
 				})}
