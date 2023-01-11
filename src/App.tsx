@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { Page } from './page/page';
 
 const App: FC = () => {
-	return <Page />;
+  return <Page />;
 };
 
 export default App;

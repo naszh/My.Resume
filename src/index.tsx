@@ -8,13 +8,13 @@ import { ThemeProvider } from './theme/themeProvider';
 import './index.css';
 
 const root = ReactDOM.createRoot(
-	document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement
 );
 root.render(
-	<Fragment>
-		<Normalize />
-		<ThemeProvider>
-			<App />
-		</ThemeProvider>
-	</Fragment>
+  <Fragment>
+    <Normalize />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </Fragment>
 );
