@@ -49,6 +49,9 @@ export const MyProfile = () => {
             );
           })}
         </LinksList>
+        <DefaultLink href="/Anastasiya's Resume.pdf" target='_blank'>
+          Click to open in pdf
+        </DefaultLink>
       </ProfileInfo>
     </BlockContainer>
   );

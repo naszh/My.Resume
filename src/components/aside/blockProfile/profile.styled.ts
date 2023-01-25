@@ -33,7 +33,7 @@ export const Description = styled.p`
 `;
 
 export const LinksList = styled.ul`
-  margin: 0;
+  margin: 0 0 10px;
   padding: 0;
 `;
 
