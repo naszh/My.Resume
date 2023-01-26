@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useContext } from 'react';
 
 import { MyInfo, MyLanguages, MyProfile, MySkills } from '../components/aside';
@@ -17,31 +16,20 @@ export const Page = () => {
   const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <Router>
-      <PageContainer>
-        <MaterialUISwitch onClick={toggleTheme} />
-        <SectContainer>
-          <MyProfile />
-          <MyInfo />
-          <MySkills />
-          <MyLanguages />
-        </SectContainer>
-        <SectContainer>
-          <AboutMe />
-          <Routes>
-            <Route
-              path='/'
-              element={
-                <>
-                  <MyExperience />
-                  <MyEducation />
-                </>
-              }
-            />
-            <Route path='/portfolio' element={<MyPortfolio />} />
-          </Routes>
-        </SectContainer>
-      </PageContainer>
-    </Router>
+    <PageContainer>
+      <MaterialUISwitch onClick={toggleTheme} />
+      <SectContainer>
+        <MyProfile />
+        <MyInfo />
+        <MySkills />
+        <MyLanguages />
+      </SectContainer>
+      <SectContainer>
+        <AboutMe />
+        <MyExperience />
+        <MyEducation />
+        <MyPortfolio />
+      </SectContainer>
+    </PageContainer>
   );
 };

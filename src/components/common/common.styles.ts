@@ -16,7 +16,7 @@ export const BlockContainer = styled.div`
 
 export const BlockHeader = styled.h3`
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0 0 15px;
 `;
 
@@ -25,7 +25,7 @@ export const BlockHeaderSpan = styled.span<{ theme: Theme }>`
   top: -12px;
   font-style: italic;
   background-color: ${({ theme }) =>
-    theme === 'light' ? '#EAE7DC' : '#2C3531'};
+    theme === 'light' ? '#F7F5F0' : '#2C3531'};
   color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
 `;
 
@@ -40,7 +40,7 @@ export const ItemsList = styled.ul`
 export const ItemWithBorder = styled.span<{ theme: Theme }>`
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  padding: 6px;
+  padding: 4px 6px;
   margin: 3px;
   text-align: center;
   &:hover {
@@ -57,4 +57,5 @@ export const DefaultLink = styled.a`
 
 export const Text = styled.p`
   text-align: justify;
+  margin-top: 0;
 `;

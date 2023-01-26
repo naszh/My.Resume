@@ -23,16 +23,23 @@ export const ProjectBox = styled(BlockContainer)`
 
 export const Header = styled.h4`
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
 `;
 
 export const PreviewImg = styled.img`
   width: 100%;
+  border-radius: 10px;
+  margin: 5px 0;
+`;
+
+export const TextPortf = styled.p`
+  text-align: justify;
+  margin: 0;
 `;
 
 export const GithubButton = styled(VscGithub)`
-  font-size: 2rem;
+  font-size: 1.6rem;
   vertical-align: middle;
   margin: 5px;
   &:hover {
@@ -41,7 +48,7 @@ export const GithubButton = styled(VscGithub)`
 `;
 
 export const VercelButton = styled(SiVercel)`
-  font-size: 2rem;
+  font-size: 1.6rem;
   vertical-align: middle;
   margin: 5px;
   &:hover {

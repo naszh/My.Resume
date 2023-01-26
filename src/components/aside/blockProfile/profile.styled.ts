@@ -2,46 +2,43 @@ import { Theme } from '@mui/material';
 import styled from 'styled-components';
 
 export const Avatar = styled.img`
-  width: 70%;
+  width: 75%;
   position: relative;
 `;
 
 export const ProfileInfo = styled.div`
   text-align: center;
-  padding-top: 20px;
 `;
 
-export const HeaderTextOne = styled.h1<{ theme: Theme }>`
-  font-size: 2.2rem;
-  text-align: left;
-  position: absolute;
+export const HeaderTextOne = styled.h1`
+  font-size: 2.5rem;
   margin: 0;
-  top: 10px;
-  color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
 `;
 
 export const HeaderTextTwo = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0;
-  position: relative;
-  bottom: 20px;
 `;
 
 export const Description = styled.p`
-  font-size: 1rem;
-  margin: -15px 0 40px;
+  font-size: 1.2rem;
+  margin: 0 0 15px;
 `;
 
 export const LinksList = styled.ul`
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   padding: 0;
 `;
 
 export const LinksListItem = styled.li`
   list-style: none;
   display: inline-block;
-  padding: 0 15px;
+  margin: 0 7px;
   &:hover {
     transform: scale(1.3);
   }
+`;
+
+export const LinkPdf = styled.a<{ theme: Theme }>`
+  color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
 `;

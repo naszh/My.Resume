@@ -4,7 +4,8 @@ export const PageContainer = styled.div`
   display: grid;
   grid-template-columns: 0.8fr 2fr;
   gap: 20px;
-  margin: 0 150px;
+  margin: 0 120px;
+  font-size: 1.1rem;
   @media (max-width: 1100px) {
     grid-template-columns: 1fr 2fr;
     margin: 0 50px;

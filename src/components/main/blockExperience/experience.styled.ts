@@ -8,6 +8,7 @@ export const ContainerExp = styled.div`
 
 export const ListExp = styled.ul`
   padding: 0;
+  margin-bottom: 0;
 `;
 
 export const ListItemExp = styled.li`

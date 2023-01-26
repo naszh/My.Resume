@@ -9,7 +9,6 @@ import {
   BlockHeaderSpan,
   ItemsList,
   DefaultLink,
-  Text,
 } from '../../common/common.styles';
 import {
   Notification,
@@ -20,6 +19,7 @@ import {
   VercelButton,
   PreviewImg,
   SmallerItemWithBorder,
+  TextPortf,
 } from './portfolio.styled';
 
 export const MyPortfolio = () => {
@@ -42,7 +42,7 @@ export const MyPortfolio = () => {
                 <DefaultLink href={project.githubLink} target='_blank'>
                   <GithubButton
                     style={{
-                      color: theme === 'light' ? '#034640' : '#D1CCB9',
+                      color: theme === 'light' ? '#032640' : '#D1CCB9',
                     }}
                   />
                 </DefaultLink>
@@ -50,14 +50,14 @@ export const MyPortfolio = () => {
                   <DefaultLink href={project.deployLink} target='_blank'>
                     <VercelButton
                       style={{
-                        color: theme === 'light' ? '#034640' : '#D1CCB9',
+                        color: theme === 'light' ? '#032640' : '#D1CCB9',
                       }}
                     />
                   </DefaultLink>
                 )}
               </Header>
               <PreviewImg src={project.imgSrc} alt='Project preview' />
-              <Text>{project.description}</Text>
+              <TextPortf>{project.description}</TextPortf>
               <ItemsList>
                 {project.stack.map((el, i) => (
                   <SmallerItemWithBorder key={i} theme={theme}>

@@ -2,17 +2,10 @@ import styled from 'styled-components';
 
 export const Line = styled.div`
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
 `;
 
 export const ParagraphText = styled.p`
-  margin: 15px 10px;
+  margin: 0;
   text-align: justify;
-`;
-
-export const ParagraphNav = styled.p`
-  margin: 15px 10px 5px;
-  display: flex;
-  gap: 70px;
-  font-size: 1.1rem;
-  font-weight: 600;
 `;

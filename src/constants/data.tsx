@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhoneIncoming } from 'react-icons/fi';
 import { TbBrandTelegram } from 'react-icons/tb';
 
 import { DefaultLink } from '../components/common/common.styles';
@@ -38,41 +38,57 @@ export const contactLinks: Array<ContactLinksType> = [
     target: '_blank',
     icon: <TbBrandTelegram />,
   },
+  {
+    name: 'Phone',
+    link: 'tel:+375298198149',
+    icon: <FiPhoneIncoming />,
+  },
 ];
 
 export const skillsList: SkillsListType = [
-  'HTML',
-  'CSS',
-  'SASS',
-  'Adaptive layout',
-  'BEM',
-  'Bootstrap',
-  'Git',
   'JavaScript',
   'TypeScript',
   'React',
   'Redux',
-  'Parcel bundler',
+  'Redux thunk',
+  'Material UI',
+  'Axios',
+  'Postman',
+  'Git',
+  'HTML',
+  'CSS',
+  'SASS',
+  'Bootstrap',
+  'Adaptive layout',
+  'GitHub',
+  'Figma',
+  'Parcel',
+  'Webpack',
+  'BEM',
+  'DRY',
+  'KISS',
+  'YAGNI',
+  'SOLID',
   'MySQL',
 ];
 
 export const languagesList: LanguagesListType = [
-  'Russian',
-  'Belarusian',
   <DefaultLink href='https://www.efset.org/cert/zh7ny2' target='_blank'>
     English – click to view certificate EF SET
   </DefaultLink>,
+  'Russian',
+  'Belarusian',
 ];
 
 export const ExperienceList: Array<ExperienceListType> = [
   {
     organization: 'National Statistical Committee of the Republic of Belarus',
     period: 'May, 2022 – now',
-    position: 'Editor of Internet resource',
+    position: 'HTML developer',
     duties: [
-      'ensuring the operability and maintenance of Internet sites',
-      'technical editing (html layout)',
-      'administration of official accounts in social networks',
+      'maintaining and editing pages using html/css',
+      'fixing website bugs to improve the user experience',
+      'providing technical support to users regarding the use of the site',
     ],
   },
 ];
@@ -112,17 +128,10 @@ export const ProjectsList: Array<ProjectsListType> = [
     deployLink: 'https://react-redux-for-practice.vercel.app/',
   },
   {
-    title: 'Resume',
-    imgSrc: '../../../projectResume.png',
-    description: 'My resume for job hunting',
-    stack: ['JavaScript', 'TypeScript', 'React'],
-    githubLink: 'https://github.com/naszh/My.Resume',
-  },
-  {
     title: 'NBRB',
     imgSrc: '../../../projectNBRB.png',
     description:
-      'Using the API of the National Bank of the Republic of Belarus. The rates of some currencies for today are displayed. The choice of any currency that has ever existed in the Republic of Belarus has been implemented for any time period with the output of a chart of dynamics and exchange rates.',
+      'A project using the API of the National Bank of the Republic of Belarus. The values of some currencies for today are displayed. It is also possible to choose any currency that has ever existed in Belarus and display a chart of exchange rates for any period of time.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     githubLink: 'https://github.com/naszh/NBRB-API',
     deployLink: 'http://nbrb-phi.vercel.app/',

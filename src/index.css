@@ -1,8 +1,6 @@
-@import url('https: //fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap');
-
 body {
   margin: 0;
-  font-family: 'Averia Sans Libre';
+  font-family: Calibri, Candara, Segoe, Optima, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

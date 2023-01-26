@@ -7,9 +7,8 @@ import {
   BlockContainer,
   BlockHeaderSpan,
   BlockHeader,
-  Text,
 } from '../../common/common.styles';
-import { ContainerEduc, Link } from './education.styled';
+import { ContainerEduc, Link, TextEduc } from './education.styled';
 
 export const MyEducation = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,17 +18,17 @@ export const MyEducation = () => {
       <BlockHeaderSpan theme={theme}>
         Where I gained my knowledge
       </BlockHeaderSpan>
-      <BlockHeader>Education and courses</BlockHeader>
+      <BlockHeader>Education</BlockHeader>
       {EducationList.map((el, i) => (
         <ContainerEduc key={i}>
-          <Text>{el.period}</Text>
-          <Text>{el.progress}</Text>
-          <Text>{el.speciality}</Text>
-          <Text>
+          <TextEduc>{el.period}</TextEduc>
+          <TextEduc>{el.progress}</TextEduc>
+          <TextEduc>{el.speciality}</TextEduc>
+          <TextEduc>
             <Link href={el.placeLink} target='_blank' theme={theme}>
               {el.place}
             </Link>
-          </Text>
+          </TextEduc>
         </ContainerEduc>
       ))}
     </BlockContainer>
