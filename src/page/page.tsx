@@ -27,8 +27,8 @@ export const Page = () => {
       <SectContainer>
         <AboutMe />
         <MyExperience />
-        <MyEducation />
         <MyPortfolio />
+        <MyEducation />
       </SectContainer>
     </PageContainer>
   );

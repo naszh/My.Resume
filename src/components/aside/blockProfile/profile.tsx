@@ -10,7 +10,7 @@ import {
   Description,
   HeaderTextOne,
   HeaderTextTwo,
-  LinkPdf,
+  // LinkPdf,
   LinksList,
   LinksListItem,
   ProfileInfo,
