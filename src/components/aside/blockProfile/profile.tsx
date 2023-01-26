@@ -10,7 +10,7 @@ import {
   Description,
   HeaderTextOne,
   HeaderTextTwo,
-  // LinkPdf,
+  LinkPdf,
   LinksList,
   LinksListItem,
   ProfileInfo,
@@ -50,9 +50,9 @@ export const MyProfile = () => {
             );
           })}
         </LinksList>
-        {/* <LinkPdf href="/Anastasiya's Resume.pdf" target='_blank' theme={theme}>
+        <LinkPdf href='/NaszhResume.pdf' target='_blank' theme={theme}>
           Click to open in pdf
-        </LinkPdf> */}
+        </LinkPdf>
       </ProfileInfo>
     </BlockContainer>
   );

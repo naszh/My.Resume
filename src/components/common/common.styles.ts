@@ -43,9 +43,6 @@ export const ItemWithBorder = styled.span<{ theme: Theme }>`
   padding: 4px 6px;
   margin: 3px;
   text-align: center;
-  &:hover {
-    transform: scale(1.05);
-  }
   border-color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
   color: ${({ theme }) => (theme === 'light' ? '#03766B' : '#57BA98')};
 `;

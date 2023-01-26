@@ -14,7 +14,7 @@ export const AboutMe = () => {
         Always have a strong desire to expand my knowledge, currently developing
         a new project with a backend.
         <br />
-        Open to your suggections.
+        Solid knowledge of English, both speaking and writing.
       </ParagraphText>
     </BlockContainer>
   );
