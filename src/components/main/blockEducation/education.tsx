@@ -22,7 +22,13 @@ export const MyEducation = () => {
       {EducationList.map((el, i) => (
         <ContainerEduc key={i}>
           <TextEduc>{el.period}</TextEduc>
-          <TextEduc>{el.progress}</TextEduc>
+          {el.progressLink ? (
+            <Link href={el.progressLink} target='_blank' theme={theme}>
+              {el.progress}
+            </Link>
+          ) : (
+            <TextEduc>{el.progress}</TextEduc>
+          )}
           <TextEduc>{el.speciality}</TextEduc>
           <TextEduc>
             <Link href={el.placeLink} target='_blank' theme={theme}>

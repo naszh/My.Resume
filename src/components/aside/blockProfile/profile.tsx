@@ -50,7 +50,11 @@ export const MyProfile = () => {
             );
           })}
         </LinksList>
-        <LinkPdf href='/NaszhResume.pdf' target='_blank' theme={theme}>
+        <LinkPdf
+          href='/FrontendDev_AnastasiyaKaskevich.pdf'
+          target='_blank'
+          theme={theme}
+        >
           Click to open in pdf
         </LinkPdf>
       </ProfileInfo>

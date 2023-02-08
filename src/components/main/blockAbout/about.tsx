@@ -11,10 +11,8 @@ export const AboutMe = () => {
         HTML, CSS and preprocessors. Worked with Figma, API requests, react
         libraries.
         <br />
-        Always have a strong desire to expand my knowledge, currently developing
-        a new project with a backend.
-        <br />
-        Solid knowledge of English, both speaking and writing.
+        Always have a strong desire to expand my knowledge. Solid knowledge of
+        English, both speaking and writing.
       </ParagraphText>
     </BlockContainer>
   );

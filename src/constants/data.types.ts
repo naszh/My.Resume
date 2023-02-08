@@ -20,6 +20,7 @@ export interface ExperienceListType {
 export interface EducationListType {
   period: string;
   progress: string;
+  progressLink?: string;
   speciality: string;
   place: string;
   placeLink: string;

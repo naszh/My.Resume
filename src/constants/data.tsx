@@ -102,8 +102,10 @@ export const EducationList: Array<EducationListType> = [
     placeLink: 'https://rs.school/js/',
   },
   {
-    period: 'Jun, 2022 – now',
-    progress: 'In progress',
+    period: 'Jun, 2022 – Feb, 2023',
+    progress: 'Certificate',
+    progressLink:
+      'https://drive.google.com/file/d/1bFu0PLGjjytu4ZOu483Ejs9VrV3jZ13I/view?usp=share_link',
     speciality: 'Frontend Development',
     place: 'TeachMeSkills',
     placeLink:
@@ -119,6 +121,14 @@ export const EducationList: Array<EducationListType> = [
 ];
 
 export const ProjectsList: Array<ProjectsListType> = [
+  {
+    title: 'Catagram',
+    imgSrc: '../../../projectCatagram.png',
+    description:
+      'Graduation project - Instagram for cats. Implemented a feed of posts, pagination, search, stories, the ability to like and view this list, changing the theme and more. Node/MongoDB is also connected with the possibility of registration and authorization.',
+    stack: ['JavaScript', 'TypeScript', 'React', 'Redux', 'NodeJS', 'MongoDB'],
+    githubLink: 'https://github.com/naszh/catagram',
+  },
   {
     title: 'Training project to learn typescript, react, redux',
     imgSrc: '../../../projectStudy.png',
@@ -144,12 +154,5 @@ export const ProjectsList: Array<ProjectsListType> = [
     stack: ['HTML', 'CSS', 'JavaScript'],
     githubLink: 'https://github.com/naszh/PokeAPI',
     deployLink: 'http://pokemon-naszh.vercel.app/',
-  },
-  {
-    title: 'More works',
-    imgSrc: '../../../githubPage.png',
-    description: 'My github page with other pojects.',
-    stack: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'],
-    githubLink: 'https://github.com/naszh',
   },
 ];

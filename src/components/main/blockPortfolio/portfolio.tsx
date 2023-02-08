@@ -11,7 +11,6 @@ import {
   DefaultLink,
 } from '../../common/common.styles';
 import {
-  Notification,
   ContainerPortf,
   GithubButton,
   Header,
@@ -29,10 +28,6 @@ export const MyPortfolio = () => {
     <BlockContainer>
       <BlockHeaderSpan theme={theme}>What did I do</BlockHeaderSpan>
       <BlockHeader>Recent Projects</BlockHeader>
-      <Notification>
-        Soon there will be an instagram project for cats ฅ^•ﻌ•^ฅ which I am
-        developing using javascript, typescript, react, redux and backend part.
-      </Notification>
       <ContainerPortf>
         {ProjectsList.map((project, i) => {
           return (
