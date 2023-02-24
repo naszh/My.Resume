@@ -62,6 +62,7 @@ export const skillsList: SkillsListType = [
   'Adaptive layout',
   'GitHub',
   'Figma',
+  'Photoshop',
   'Parcel',
   'Webpack',
   'BEM',
@@ -70,6 +71,8 @@ export const skillsList: SkillsListType = [
   'YAGNI',
   'SOLID',
   'MySQL',
+  'JWT',
+  'MongoDB',
 ];
 
 export const languagesList: LanguagesListType = [
@@ -82,13 +85,26 @@ export const languagesList: LanguagesListType = [
 
 export const ExperienceList: Array<ExperienceListType> = [
   {
+    organization: 'TeachMeSkills',
+    period: 'June, 2022 – February, 2023',
+    position: 'Frontend developer (GRADUATE)',
+    duties: [
+      'knowledge of version control (Git), http/https basics',
+      'experience with adaptive layout, html, css/sass, knowledge of semantics and BEM principles',
+      'Javascript: worked with synchronous and asynchronous functions, used data type methods, loops, network requests, static typing using Typescript',
+      'React/Redux Toolkit: functional components, React Router, styled-components, etc',
+      'experience with Node.js, JWT-authorization, MongoDB',
+    ],
+  },
+  {
     organization: 'National Statistical Committee of the Republic of Belarus',
     period: 'May, 2022 – now',
-    position: 'HTML developer',
+    position: 'Editor of Internet resources',
     duties: [
       'maintaining and editing pages using html/css',
       'fixing website bugs to improve the user experience',
       'providing technical support to users regarding the use of the site',
+      'maintaining social networks',
     ],
   },
 ];

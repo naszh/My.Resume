@@ -8,7 +8,6 @@ import { BlockContainer, DefaultLink } from '../../common/common.styles';
 import {
   Avatar,
   Description,
-  HeaderTextOne,
   HeaderTextTwo,
   LinkPdf,
   LinksList,
@@ -23,7 +22,6 @@ export const MyProfile = () => {
     <BlockContainer>
       <ProfileInfo>
         <Avatar src='../profile-pic.png' alt={`avatar of ${myName}`} />
-        <HeaderTextOne theme={theme}>Hello, I'm</HeaderTextOne>
         <HeaderTextTwo>{myName}</HeaderTextTwo>
         <Description>&lt;frontend developer /&gt;</Description>
         <LinksList>
@@ -51,7 +49,7 @@ export const MyProfile = () => {
           })}
         </LinksList>
         <LinkPdf
-          href='/FrontendDev_AnastasiyaKaskevich.pdf'
+          href='/FRONTEND_KaskevichAnastasiya_CV.pdf'
           target='_blank'
           theme={theme}
         >

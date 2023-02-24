@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 export const ContainerExp = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;

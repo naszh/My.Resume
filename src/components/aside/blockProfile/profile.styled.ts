@@ -10,11 +10,6 @@ export const ProfileInfo = styled.div`
   text-align: center;
 `;
 
-export const HeaderTextOne = styled.h1`
-  font-size: 2.5rem;
-  margin: 0;
-`;
-
 export const HeaderTextTwo = styled.h2`
   font-size: 1.8rem;
   margin: 0;
